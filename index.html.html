@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSworkout6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .camper{
+        background-image:url(beautiful-mountain-landscape-before-sunset-free-photo.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 30px 30px;
+        }
+        .camper1{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .c{
+            letter-spacing: 3px;
+            margin-left: 70px;
+        }
+        .link{
+            display: flex;
+            gap: 30px;
+
+        }
+        .link a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+        .link a:hover{
+            color:rgb(254, 254, 24);
+        }
+        .account{
+            text-decoration: none;
+            color: white;
+            margin-right: 50px;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            color: white;
+        }
+        .left h6{
+            transform: rotate(90deg);
+        }
+        .left i{
+            margin-left: 15px;
+        }
+        .camper2{
+            display: flex;
+        }
+        .camper-text{
+            margin-top: 10px;
+            margin-left: 350px; 
+        }
+        .camper-text h6{
+            letter-spacing: 3px;
+            font-size: 13px;
+            color: rgb(254, 254, 24);
+        }
+        .camper-text h2{
+            font-size: 50px;
+            color: white;
+        }
+        .right{
+            margin-left: 240px;
+            color: white;
+            justify-items: center;
+        }
+        .btn{
+            border: none;
+            padding: 10px 10px;
+            background-color: rgb(227, 227, 15);
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 130px;
+        }
+        .btn:hover{
+            background-color: white;
+        }
+        .About{
+            display: flex;
+            background-color: #372760;
+            color: white;
+        }
+        .About-content{
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        .About-content a{
+            text-decoration: none;
+            color: white;
+        }
+        .About-pic{
+            width: 400px;
+            overflow: hidden;    
+            margin-left: 390px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+        }
+        .About-pic img{
+             border-radius: 120px 0 0 120px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 30px 30px 8px#8e73d2;
+            object-fit: cover;
+        }
+        .map{
+            display: flex;
+            background-color: #372760;
+            color: white; 
+        }
+        .map-content{
+             margin-left: 390px;
+            margin-top: 10px;
+        }
+        .map-content a{
+             text-decoration: none;
+            color: white;
+        }
+        .map-pic{
+            width: 400px;
+            overflow: hidden;
+            margin-top: 50px;
+            margin-bottom: 50px; 
+        }
+        .map-pic img{
+            border-radius: 0 120px 120px 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+         .transport{
+            display: flex;
+            background-color: #372760;
+            color: white;
+        }
+        .transport-content{
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        .transport-content a{
+            text-decoration: none;
+            color: white;
+        }
+        .transport-pic{
+            width: 400px;
+            overflow: hidden;    
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 390px;
+        }
+        .transport-pic img{
+             border-radius: 120px 0 0 120px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .Explore{
+            display: flex;
+            background-color: #372760;
+            color: white;
+            padding: 30px;
+        }
+        .let-Explore{
+            margin-left: 130px;
+        }
+        .Explore-btn{
+            padding: 10px;
+            width: 150px;
+            background-color: rgb(227, 227, 15);
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .letexplore-text{
+         margin-left: 350px;   
+        }
+        .continer{
+            display: flex;
+             background-color: #372760;
+            padding: 30px;
+            justify-content: space-around;
+        }
+        .hover{
+            position: relative;
+            
+        }
+        .hover img{
+            width: 110%;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px;
+            transition: 0.5s;
+        }
+        .p{
+            height: 330px;
+            width: 100px;
+        }
+        .text{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        }
+        .hover:hover img{
+             filter: brightness(50%);
+            transform: scale(1.1);
+        }
+        .why{
+             background-color: #372760;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+        .last{
+            display: flex;
+            background-color: #372760;
+            color:white;
+            padding: 30px;
+            text-align: center;
+            justify-content: space-around;
+        }
+        .last1 i{
+            font-size: 40px;
+        }
+        .well{
+            background-image: url(ballow.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 30px 30px;
+            opacity: 0.8;
+            color: black;
+            text-align: center;
+        }
+        .well p{
+             font-size: 15px;
+        }
+        .well button{
+          padding: 10px;
+            width: 150px;
+            background-color: rgb(227, 227, 15);
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;  
+        }
+        .plan{
+            padding-top:60px;
+            background-color: #372760;
+            padding: 30px;
+        }
+
+        .plan h1{
+            text-align:center;
+            letter-spacing:8px;
+            margin-bottom:80px;
+            font-size:32px;
+            color: white;
+        }
+        .row{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin:70px 0;
+        }
+        .step{
+            text-align:center;
+        }
+
+        .circle{
+            width:50px;
+            height:50px;
+            border:3px solid white;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:20px;
+            color: white;
+            margin:auto;
+        }
+        .line{
+            flex:1;
+            height:3px;
+            width: 7%;
+            background:white;
+            margin:0 20px;
+        }
+        .city{
+            margin-bottom:15px;
+            font-size:14px;
+            color:white;
+        }
+        .bottom-city{
+            margin-top:15px;
+            font-size:14px;
+            color:white;
+        }
+        .informed{
+            background-color: #372760;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            color: white;
+            padding: 30px;
+        }
+        .Explore-btn:hover{
+            background-color: white;
+        }
+        .well button:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="camper">
+        <div class="camper1">
+            <h3 class="c">CAMPER</h3>
+            <div class="link">
+            <a href="sheet.html" target="_blank">Travel Map</a>
+            <a href="sheet.html" target="_blank">About us</a>
+            <a href="sheet.html" target="_blank">Blog</a>
+            </div>
+            <div>
+            <i class="fa-solid fa-circle-user"></i>
+            <a class="account" href="sheet.html" target="_blank">Account</a>
+            </div>
+        </div>
+        <div class="camper2">
+        <div class="left">
+            <h6>Follow us</h6>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="camper-text">
+            <h6><b>JOIN US ON THE BIG CANADA ROAD TRIP</b></h6>
+            <h2>It's Great Time <br>to Start Living Now</h2>
+            <button class="btn">Know More</button>
+        </div>
+        <div class="right">
+            <h5>Start</h5>
+            <h5>01</h5>
+            <h5>02</h5>
+            <h5>03</h5>
+        </div>     
+    </div>
+    </div>
+    <div class="About">
+        <div class="About-content">
+            <h4>About</h4>
+            <h3>Become Part of<br>Two-Week Canada Western Conquest</h3>
+            <p>Fascinating landscape,national parks<br>with thousand year-old trees up to the sky an aindian<br>village with more than 80 totem poles.<br>climb the mountains,swim in the healing hot springs<br>spend the night under the starry sky with campeer</p>
+            <a href="sheet.html">read more</a>
+        </div>
+        <div class="About-pic">
+            <img src="mountain1.jpg">
+        </div>
+    </div>
+    <div class="map">
+         <div class="map-pic">
+            <img src="mountain2.jpg">
+        </div>
+        <div class="map-content">
+            <h4>Travel Map</h4>
+            <h3>Explore & Enjoy</h3>
+            <p>From Vancouver to calgary 2 prrovinces, 7 citites,8 stop<br>2017km.Visit the highest peak of the Canadian Rocky<br> Mountains.Enjoy the beauty of the Sarnvapta Falls and <br>Peyto Lake meet the residents of Banff, a small<br>Mountain town at an elevation of 1380 meters</p>
+            <a href="sheet.html">read more</a>
+        </div>   
+    </div>
+     <div class="transport">
+        <div class="transport-content">
+            <h4>Transport</h4>
+            <h3>How to Move Around?</h3>
+            <p>The CAMPER provides you with comfortable vans with all<br>the amenities inside.<br>At your disposal:consumer electonics,bathrom,TV,<br>two or more beds,air conditioning,mini,fridge,sink and <br>stove,solar powered electricity</p>
+            <a href="sheet.html">read more</a>
+        </div>
+        <div class="transport-pic">
+            <img src="mountain3.jpg">
+        </div>
+    </div> 
+    <div class="Explore">
+        <div class="let-Explore">
+            <h3>Let's Explore<br>the World Together</h3>
+            <button class="Explore-btn">Let's Go</button>
+        </div>
+        <div class="letexplore-text">
+            <p>CAMPER ia an online road trip planner on which you can<br>personalize your 100% talior-made trip to canada.</p>
+            <p>Our website is the only existing platform where it is possible<br> to truly plan your entire road trip online.By choosing your <br>destinations and ypur accommodations.while also having the<br>possiblity of adding opational activitiesn and a rental vechicle </p>
+        </div>
+    </div>
+    <div class="continer">
+    <div class="hover">
+        <img src="hover-pic 1.jpg">
+         <div class="text">Pacific Rim</div>
+    </div>
+    <div class="hover">
+        <img src="hover-pic 2.jpg">
+         <div class="text">Vancouver</div>
+    </div>
+    <div class="hover">
+        <img src="hover-pic 3.jpg" class="p">
+         <div class="text">Victoria</div>
+    </div>
+     <div class="hover">
+        <img src="hover-pic 4.jpg">
+         <div class="text">calgary</div>
+     </div>
+     <div class="hover">
+        <img src="hover-pic 5.jpg">
+         <div class="text">Whistler</div>
+    </div>
+    </div>
+    <div class="why">
+        <h1>Why CAMPER?</h1>
+        <P>We thoroughly take care of each of our clients and their comfort during each trip.Our company is a <br>partner of more than a thousand hotels across the country.where our customer will be provider with<br>Special favorable conditions </P>
+    </div>
+    <div class="last">
+          <div class="last1">
+           <i class="fa-solid fa-users"></i> 
+           <h1>10K+</h1>
+           <h3>Happy Customers</h3>
+           <p>We have over 10,000 happy customers<br>who have already used the<br>services OF CAMPER </p>
+          </div>
+          <div class="last1">
+            <i class="fa-solid fa-truck-moving"></i>
+            <h1>247</h1>
+            <h3>Comfortable Vans </h3>
+            <P>Our vans are equipped with all the<br>necessary amenities for a <br>comfortable journey</P>
+          </div>
+          <div class="last1">
+            <i class="fa-solid fa-map-location-dot"></i> 
+            <h1>3860</h1>
+            <h3>Completed Tours</h3>
+            <p>We have already organized 3860<br>tours in Canada in 86 cities and<br>more than 450 landmark.</p>
+          </div>
+    </div>
+    <div class="well">
+        <h2>The CAMPER Has Other Tours As Well</h2>
+        <p>We have more than 200 different tours in Canada and the USA, Just select the data<br>and place and the tour is yours at you have not found a tour that suits your needs<br>contact us and we will make an individual tour for you. </p>
+        <button>See The Tours</button>
+    </div>
+<div class="plan">
+
+    <h1>CAMPER TRAVEL PLAN</h1>
+    <div class="row">
+
+        <div class="step">
+            <div class="city">Vancouver</div>
+            <div class="circle">1</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="city">Victoria</div>
+            <div class="circle">2</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="city">Pacific Rim</div>
+            <div class="circle">3</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="city">Athabasca</div>
+            <div class="circle">4</div>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="step">
+            <div class="circle">8</div>
+            <div class="bottom-city">Calgary</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">7</div>
+            <div class="bottom-city">Banff</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">6</div>
+            <div class="bottom-city">Jasper</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <div class="bottom-city">Wells Gray</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="informed">
+    <div class="stay">
+        <h5>STAY INFORMED</h5>
+        <input type="email" placeholder="my email">
+    </div>
+    <div class="Info">
+        <h3>Information</h3>
+        <details>
+            <summary>About</summary>
+            We have more than 200 different tours in Canada and the USA, Just select the data<br>and place and the tour is yours at you have not found a tour that suits your needs<br>contact us and we will make an individual tour for you.
+        </details><br>
+        <details>
+        <summary>Hotels</summary>
+        We have over 10,000 happy customers<br>who have already used the<br>services OF CAMPER
+        </details><br>
+        <details>
+        <summary>Price</summary>
+        It will be 2laks 
+        </details>
+    </div>
+    <div class="contact">
+        <h2>Contact</h2>
+        <i class="fa-solid fa-phone"></i>
+        <span>514-307-1555<br>camperca@gmail</span>
+    </div>
+    <div class="TOPIC">
+        <h1>CAMPER</h1>
+    </div>
+</div>
+</body>
+</html>
